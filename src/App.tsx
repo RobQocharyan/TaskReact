@@ -33,7 +33,7 @@ function App() {
 
   const onHandleAddsalary = () => {
     const newState = tableData.map((item: ItableData) => {
-      const salary = item.duration ? item.duration * item.oneDaySalary:0;
+      const salary = item.duration ? item.duration * item.oneDaySalary:item.duration;
       console.log({...item})
       return {
         ...item,
