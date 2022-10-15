@@ -11,7 +11,7 @@ function App() {
     try {
       const getData = async () => {
         const result = await fetch('https://api.emis.am/test');
-        const json = await result.json();
+        // const json = await result.json();
       }
       getData();
     } catch (e) {
